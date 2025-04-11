@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -22,17 +21,24 @@ const CampSchedules = () => {
   const [selectedArea, setSelectedArea] = useState("");
   const [campName, setCampName] = useState("");
   const [campDescription, setCampDescription] = useState("");
+  const [isSuccessDialogOpen, setIsSuccessDialogOpen] = useState(false);
 
-  // Find the state object for the selected state
   const stateObj = STATES.find(state => state.name === selectedState);
 
   const handleSchedule = () => {
     if (date && campName && selectedState) {
+      // Show success toast
       toast({
         title: "Camp Scheduled Successfully!",
         description: `${campName} has been scheduled for ${date.toLocaleDateString()}.`,
       });
+      
+      // Show success dialog
+      setIsSuccessDialogOpen(true);
+      
+      // Close the create dialog
       setIsCreateDialogOpen(false);
+      
       // Reset form
       setDate(undefined);
       setCampName("");
@@ -60,7 +66,7 @@ const CampSchedules = () => {
             <DialogTrigger asChild>
               <Button className="bg-medical-primary hover:bg-medical-primary/90">
                 <Plus className="mr-2 h-4 w-4" />
-                New Camp
+                Schedule Camp
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[500px]">
@@ -120,7 +126,6 @@ const CampSchedules = () => {
                         {stateObj?.areas.map((area) => (
                           <SelectItem key={area} value={area}>
                             {area}
-                          </SelectItem>
                         ))}
                       </SelectContent>
                     </Select>
@@ -143,6 +148,28 @@ const CampSchedules = () => {
             </DialogContent>
           </Dialog>
         </div>
+
+        {/* Success Dialog */}
+        <Dialog open={isSuccessDialogOpen} onOpenChange={setIsSuccessDialogOpen}>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle className="text-green-600">Success!</DialogTitle>
+            </DialogHeader>
+            <div className="py-4">
+              <p className="text-gray-700 mb-4">
+                Camp has been scheduled successfully.
+              </p>
+              <div className="flex justify-end">
+                <Button 
+                  onClick={() => setIsSuccessDialogOpen(false)}
+                  className="bg-green-600 hover:bg-green-700"
+                >
+                  Close
+                </Button>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {CAMP_SCHEDULES.map((schedule, index) => (
