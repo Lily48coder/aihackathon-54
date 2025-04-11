@@ -1,24 +1,20 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
 
-interface User {
-  name: string;
-  department: string;
-  hospital: string;
-}
+import React, { createContext, useContext, useState, ReactNode } from 'react';
+import type { DoctorInfo } from '@/types/medical';
 
 interface AuthContextType {
   isAuthenticated: boolean;
-  user: User | null;
+  user: DoctorInfo | null;
   login: () => void;
   logout: () => void;
-  setUserData: (data: User) => void;
+  setUserData: (data: DoctorInfo) => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<DoctorInfo | null>(null);
 
   const login = () => {
     setIsAuthenticated(true);
@@ -29,7 +25,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setUser(null);
   };
 
-  const setUserData = (data: User) => {
+  const setUserData = (data: DoctorInfo) => {
     setUser(data);
   };
 
