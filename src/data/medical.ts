@@ -332,549 +332,1811 @@ export const CAMP_SCHEDULES = [
 
 export const MOCK_PATIENTS = [
   {
-    id: 1,
-    name: "John Doe",
-    state: "Telangana",
-    area: "Bhadrachalam",
-    symptoms: ["Fever", "Cough"]
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    state: "Telangana",
-    area: "Bhadrachodavaram",
-    symptoms: ["Headache", "Fatigue"]
-  },
-  {
-    id: 3,
-    name: "Bob Johnson",
-    state: "Maharashtra",
-    area: "Gadchiroli",
-    symptoms: ["Fever", "Sore Throat"]
-  },
-  {
-    id: 4,
-    name: "Alice Brown",
-    state: "Delhi",
-    area: "New Delhi",
-    symptoms: ["Cough", "Shortness of Breath"]
-  },
-  {
-      "id": 5,
-      "name": "Ramesh Kumar",
-      "state": "Andhra Pradesh",
-      "area": "Araku Valley",
-      "symptoms": ["Fever", "Headache"]
-  },
-  {
-      "id": 6,
-      "name": "Tenzing Lama",
-      "state": "Arunachal Pradesh",
-      "area": "Tawang",
-      "symptoms": ["Joint Pain", "Fatigue"]
-  },
-    {
-      "id": 7,
-      "name": "Dipankar Das",
-      "state": "Assam",
-      "area": "Majuli",
-      "symptoms": ["Cough", "Cold"]
-    },
-    {
-      "id": 8,
-      "name": "Ravi Singh",
-      "state": "Bihar",
-      "area": "Raxaul",
-      "symptoms": ["Body Ache", "Nausea"]
-    },
-    {
-      "id": 9,
-      "name": "Priya Verma",
-      "state": "Chhattisgarh",
-      "area": "Dantewada",
-      "symptoms": ["Shortness of Breath", "Chest Pain"]
-    },
-    {
-      "id": 10,
-      "name": "Miguel Fernandes",
-      "state": "Goa",
-      "area": "Quepem",
-      "symptoms": ["Headache", "Fever"]
-    },
-    {
-      "id": 11,
-      "name": "Ravi Patel",
-      "state": "Gujarat",
-      "area": "Kutch Villages",
-      "symptoms": ["Fatigue", "Diarrhea"]
-    },
-    {
-      "id": 12,
-      "name": "Kavita Sharma",
-      "state": "Haryana",
-      "area": "Morni Hills",
-      "symptoms": ["Cough", "Sore Throat"]
-    },
-    {
-      "id": 13,
-      "name": "Amit Rana",
-      "state": "Himachal Pradesh",
-      "area": "Spiti Valley",
-      "symptoms": ["Cold", "Breathing Difficulty"]
-    },
-    {
-      "id": 14,
-      "name": "Pooja Soren",
-      "state": "Jharkhand",
-      "area": "Netarhat",
-      "symptoms": ["Fever", "Vomiting"]
-    },
-    {
-      "id": 15,
-      "name": "Vikram Shetty",
-      "state": "Karnataka",
-      "area": "Agumbe",
-      "symptoms": ["Chills", "Dizziness"]
-    },
-    {
-      "id": 16,
-      "name": "Anjali Nair",
-      "state": "Kerala",
-      "area": "Wayanad",
-      "symptoms": ["Cough", "Loss of Appetite"]
-    },
-    {
-      "id": 17,
-      "name": "Rajesh Singh",
-      "state": "Madhya Pradesh",
-      "area": "Mandla",
-      "symptoms": ["Fever", "Body Ache"]
-    },
-    {
-      "id": 18,
-      "name": "Sneha Kulkarni",
-      "state": "Maharashtra",
-      "area": "Melghat",
-      "symptoms": ["Skin Rash", "Itching"]
-    },
-    {
-      "id": 19,
-      "name": "Ningthou Singh",
-      "state": "Manipur",
-      "area": "Ukhrul",
-      "symptoms": ["Fever", "Cough"]
-    },
-    {
-      "id": 20,
-      "name": "Meghna Roy",
-      "state": "Meghalaya",
-      "area": "Mawsynram",
-      "symptoms": ["Breathing Difficulty", "Headache"]
-    },
-    {
-    "id": 21,
-    "name": "Sam Wilson",
-    "state": "Telangana",
-    "area": "Hyderabad",
-    "symptoms": ["Fever", "Body Ache"]
-  },
-  {
-    "id": 22,
-    "name": "Maya Reddy",
-    "state": "Telangana",
-    "area": "Warangal",
-    "symptoms": ["Cough", "Cold"]
-  },
-  {
-    "id": 23,
-    "name": "Rahul Verma",
-    "state": "Telangana",
-    "area": "Karimnagar",
-    "symptoms": ["Headache", "Fatigue"]
-  },
-  {
-    "id": 24,
-    "name": "Anusha Singh",
-    "state": "Telangana",
-    "area": "Nizamabad",
+    "id": 1,
+    "name": "Aarav",
+    "age": 34,
+    "gender": "Male",
+    "state": "Sikkim",
+    "area": "Dzongu",
     "symptoms": ["Fever", "Cough"]
   },
   {
-    "id": 25,
-    "name": "Ajay Deshmukh",
-    "state": "Maharashtra",
-    "area": "Nagpur",
-    "symptoms": ["Cough", "Fatigue"]
+    "id": 2,
+    "name": "Kiara",
+    "age": 27,
+    "gender": "Female",
+    "state": "Tamil Nadu",
+    "area": "Chennai",
+    "symptoms": ["Headache"]
   },
   {
-    "id": 26,
-    "name": "Priya Sharma",
-    "state": "Maharashtra",
-    "area": "Pune",
-    "symptoms": ["Headache", "Nausea"]
+    "id": 3,
+    "name": "Vihaan",
+    "age": 45,
+    "gender": "Male",
+    "state": "Kerala",
+    "area": "Kochi",
+    "symptoms": ["Fatigue", "Nausea"]
   },
   {
-    "id": 27,
-    "name": "Rohan Patil",
+    "id": 4,
+    "name": "Saanvi",
+    "age": 21,
+    "gender": "Female",
     "state": "Maharashtra",
     "area": "Mumbai",
-    "symptoms": ["Fever", "Body Ache"]
+    "symptoms": ["Cough", "Loss of taste"]
   },
   {
-    "id": 28,
-    "name": "Sneha Kulkarni",
-    "state": "Maharashtra",
-    "area": "Melghat",
-    "symptoms": ["Skin Rash", "Itching"]
+    "id": 5,
+    "name": "Arjun",
+    "age": 55,
+    "gender": "Male",
+    "state": "Gujarat",
+    "area": "Ahmedabad",
+    "symptoms": ["Chest pain", "Shortness of breath"]
   },
   {
-    "id": 29,
-    "name": "Ramesh Verma",
-    "state": "Delhi",
-    "area": "Chandni Chowk",
+    "id": 6,
+    "name": "Myra",
+    "age": 30,
+    "gender": "Female",
+    "state": "West Bengal",
+    "area": "Kolkata",
+    "symptoms": ["Runny nose"]
+  },
+  {
+    "id": 7,
+    "name": "Aditya",
+    "age": 39,
+    "gender": "Male",
+    "state": "Punjab",
+    "area": "Ludhiana",
     "symptoms": ["Fever", "Headache"]
   },
   {
-    "id": 30,
-    "name": "Kiran Gupta",
+    "id": 8,
+    "name": "Anaya",
+    "age": 16,
+    "gender": "Female",
+    "state": "Assam",
+    "area": "Guwahati",
+    "symptoms": ["Sore throat", "Fatigue"]
+  },
+  {
+    "id": 9,
+    "name": "Krishna",
+    "age": 62,
+    "gender": "Male",
+    "state": "Rajasthan",
+    "area": "Udaipur",
+    "symptoms": ["Shortness of breath", "Chest pain"]
+  },
+  {
+    "id": 10,
+    "name": "Ira",
+    "age": 23,
+    "gender": "Female",
+    "state": "Uttar Pradesh",
+    "area": "Lucknow",
+    "symptoms": ["Loss of smell", "Fever"]
+  },
+  {
+    "id": 11,
+    "name": "Kabir",
+    "age": 37,
+    "gender": "Male",
+    "state": "Bihar",
+    "area": "Patna",
+    "symptoms": ["Nausea", "Fatigue"]
+  },
+  {
+    "id": 12,
+    "name": "Navya",
+    "age": 28,
+    "gender": "Female",
+    "state": "Haryana",
+    "area": "Gurugram",
+    "symptoms": ["Fever"]
+  },
+  {
+    "id": 13,
+    "name": "Rudra",
+    "age": 40,
+    "gender": "Male",
+    "state": "Karnataka",
+    "area": "Bengaluru",
+    "symptoms": ["Dry cough", "Sore throat"]
+  },
+  {
+    "id": 14,
+    "name": "Aadhya",
+    "age": 19,
+    "gender": "Female",
+    "state": "Odisha",
+    "area": "Bhubaneswar",
+    "symptoms": ["Runny nose", "Headache"]
+  },
+  {
+    "id": 15,
+    "name": "Yuvan",
+    "age": 53,
+    "gender": "Male",
+    "state": "Jharkhand",
+    "area": "Ranchi",
+    "symptoms": ["Fatigue", "Fever"]
+  },
+  {
+    "id": 16,
+    "name": "Meera",
+    "age": 26,
+    "gender": "Female",
+    "state": "Himachal Pradesh",
+    "area": "Shimla",
+    "symptoms": ["Cough"]
+  },
+  {
+    "id": 17,
+    "name": "Dev",
+    "age": 31,
+    "gender": "Male",
     "state": "Delhi",
-    "area": "Dwarka",
-    "symptoms": ["Cold", "Dizziness"]
+    "area": "South Delhi",
+    "symptoms": ["Headache", "Fever"]
+  },
+  {
+    "id": 18,
+    "name": "Avni",
+    "age": 24,
+    "gender": "Female",
+    "state": "Telangana",
+    "area": "Hyderabad",
+    "symptoms": ["Sore throat", "Fatigue"]
+  },
+  {
+    "id": 19,
+    "name": "Ishaan",
+    "age": 38,
+    "gender": "Male",
+    "state": "Chhattisgarh",
+    "area": "Raipur",
+    "symptoms": ["Chest pain"]
+  },
+  {
+    "id": 20,
+    "name": "Jiya",
+    "age": 35,
+    "gender": "Female",
+    "state": "Andhra Pradesh",
+    "area": "Vijayawada",
+    "symptoms": ["Loss of smell"]
+  },
+  {
+    "id": 21,
+    "name": "Reyansh",
+    "age": 29,
+    "gender": "Male",
+    "state": "Kerala",
+    "area": "Thiruvananthapuram",
+    "symptoms": ["Fever", "Nausea"]
+  },
+  {
+    "id": 22,
+    "name": "Tara",
+    "age": 42,
+    "gender": "Female",
+    "state": "Madhya Pradesh",
+    "area": "Indore",
+    "symptoms": ["Cough", "Fatigue"]
+  },
+  {
+    "id": 23,
+    "name": "Neil",
+    "age": 36,
+    "gender": "Male",
+    "state": "Uttarakhand",
+    "area": "Dehradun",
+    "symptoms": ["Sore throat"]
+  },
+  {
+    "id": 24,
+    "name": "Rhea",
+    "age": 33,
+    "gender": "Female",
+    "state": "Tripura",
+    "area": "Agartala",
+    "symptoms": ["Loss of smell", "Runny nose"]
+  },
+  {
+    "id": 25,
+    "name": "Parth",
+    "age": 47,
+    "gender": "Male",
+    "state": "Goa",
+    "area": "Panaji",
+    "symptoms": ["Fatigue", "Chest pain"]
+  },
+  {
+    "id": 26,
+    "name": "Siya",
+    "age": 20,
+    "gender": "Female",
+    "state": "Manipur",
+    "area": "Imphal",
+    "symptoms": ["Fever", "Dry cough"]
+  },
+  {
+    "id": 27,
+    "name": "Aryan",
+    "age": 44,
+    "gender": "Male",
+    "state": "Nagaland",
+    "area": "Kohima",
+    "symptoms": ["Shortness of breath"]
+  },
+  {
+    "id": 28,
+    "name": "Ishita",
+    "age": 25,
+    "gender": "Female",
+    "state": "Mizoram",
+    "area": "Aizawl",
+    "symptoms": ["Loss of taste", "Fatigue"]
+  },
+  {
+    "id": 29,
+    "name": "Darsh",
+    "age": 41,
+    "gender": "Male",
+    "state": "Sikkim",
+    "area": "Gangtok",
+    "symptoms": ["Headache"]
+  },
+  {
+    "id": 30,
+    "name": "Naira",
+    "age": 22,
+    "gender": "Female",
+    "state": "Punjab",
+    "area": "Amritsar",
+    "symptoms": ["Fever", "Loss of smell"]
   },
   {
     "id": 31,
-    "name": "Manoj Kumar",
-    "state": "Delhi",
-    "area": "Saket",
-    "symptoms": ["Shortness of Breath", "Chest Pain"]
+    "name": "Riyan",
+    "age": 56,
+    "gender": "Male",
+    "state": "Assam",
+    "area": "Silchar",
+    "symptoms": ["Dry cough", "Chest pain"]
   },
   {
     "id": 32,
-    "name": "Neha Kapoor",
-    "state": "Delhi",
-    "area": "Janakpuri",
-    "symptoms": ["Cough", "Cold"]
+    "name": "Vanya",
+    "age": 27,
+    "gender": "Female",
+    "state": "Gujarat",
+    "area": "Surat",
+    "symptoms": ["Fatigue", "Runny nose"]
   },
   {
     "id": 33,
-    "name": "Anita Sharma",
-    "state": "Madhya Pradesh",
-    "area": "Indore",
-    "symptoms": ["Headache", "Fatigue"]
+    "name": "Laksh",
+    "age": 43,
+    "gender": "Male",
+    "state": "Maharashtra",
+    "area": "Nagpur",
+    "symptoms": ["Headache", "Sore throat"]
   },
   {
     "id": 34,
-    "name": "Vivek Jain",
-    "state": "Madhya Pradesh",
-    "area": "Bhopal",
-    "symptoms": ["Cough", "Fever"]
+    "name": "Aisha",
+    "age": 32,
+    "gender": "Female",
+    "state": "Tamil Nadu",
+    "area": "Madurai",
+    "symptoms": ["Loss of taste"]
   },
   {
     "id": 35,
-    "name": "Meena Chaturvedi",
-    "state": "Madhya Pradesh",
-    "area": "Jabalpur",
-    "symptoms": ["Shortness of Breath", "Cold"]
+    "name": "Vivaan",
+    "age": 50,
+    "gender": "Male",
+    "state": "Rajasthan",
+    "area": "Jaipur",
+    "symptoms": ["Shortness of breath", "Fatigue"]
   },
   {
     "id": 36,
-    "name": "Rajesh Singh",
-    "state": "Madhya Pradesh",
-    "area": "Mandla",
-    "symptoms": ["Fever", "Body Ache"]
+    "name": "Zara",
+    "age": 31,
+    "gender": "Female",
+    "state": "Chandigarh",
+    "area": "Sector 17",
+    "symptoms": ["Fever", "Nausea"]
   },
   {
     "id": 37,
-    "name": "Asha Rao",
-    "state": "Karnataka",
-    "area": "Bangalore",
-    "symptoms": ["Cough", "Fever"]
+    "name": "Om",
+    "age": 48,
+    "gender": "Male",
+    "state": "Delhi",
+    "area": "Rohini",
+    "symptoms": ["Sore throat", "Loss of smell"]
   },
   {
     "id": 38,
-    "name": "Ravi Iyer",
-    "state": "Karnataka",
-    "area": "Mysore",
-    "symptoms": ["Fatigue", "Headache"]
+    "name": "Kriti",
+    "age": 30,
+    "gender": "Female",
+    "state": "Telangana",
+    "area": "Secunderabad",
+    "symptoms": ["Runny nose", "Fatigue"]
   },
   {
     "id": 39,
-    "name": "Harish Nayak",
-    "state": "Karnataka",
-    "area": "Hubli",
-    "symptoms": ["Cold", "Body Ache"]
+    "name": "Atharv",
+    "age": 46,
+    "gender": "Male",
+    "state": "West Bengal",
+    "area": "Asansol",
+    "symptoms": ["Cough", "Headache"]
   },
   {
     "id": 40,
-    "name": "Vikram Shetty",
+    "name": "Nisha",
+    "age": 34,
+    "gender": "Female",
     "state": "Karnataka",
-    "area": "Agumbe",
-    "symptoms": ["Chills", "Dizziness"]
+    "area": "Mysuru",
+    "symptoms": ["Fatigue", "Fever"]
   },
   {
-      "id": 41,
-      "name": "Rajat Verma",
-      "state": "Andhra Pradesh",
-      "area": "Rampachodavaram",
-      "symptoms": ["Fever", "Headache"]
-    },
-    {
-      "id": 42,
-      "name": "Sunitha Rao",
-      "state": "Andhra Pradesh",
-      "area": "Maredumilli",
-      "symptoms": ["Cough", "Fatigue"]
-    },
-    {
-      "id": 43,
-      "name": "Kiran Das",
-      "state": "Arunachal Pradesh",
-      "area": "Tuting",
-      "symptoms": ["Sore Throat", "Shortness of Breath"]
-    },
-    {
-      "id": 44,
-      "name": "Meena Sharma",
-      "state": "Arunachal Pradesh",
-      "area": "Vijaynagar",
-      "symptoms": ["Cold", "Body Ache"]
-    },
-    {
-      "id": 45,
-      "name": "Ankit Sinha",
-      "state": "Assam",
-      "area": "Jonai",
-      "symptoms": ["Fever", "Diarrhea"]
-    },
-    {
-      "id": 46,
-      "name": "Priyanka Roy",
-      "state": "Assam",
-      "area": "Haflong",
-      "symptoms": ["Cough", "Loss of Appetite"]
-    },
-    {
-      "id": 47,
-      "name": "Ravi Shankar",
-      "state": "Bihar",
-      "area": "Kaimur Hills",
-      "symptoms": ["Body Ache", "Dizziness"]
-    },
-    {
-      "id": 48,
-      "name": "Rajni Kumari",
-      "state": "Bihar",
-      "area": "Lauria",
-      "symptoms": ["Nausea", "Fatigue"]
-    },
-    {
-      "id": 49,
-      "name": "Aditya Ghosh",
-      "state": "Chhattisgarh",
-      "area": "Narayanpur",
-      "symptoms": ["Fever", "Skin Rash"]
-    },
-    {
-      "id": 50,
-      "name": "Snehal Patil",
-      "state": "Chhattisgarh",
-      "area": "Sukma",
-      "symptoms": ["Vomiting", "Itching"]
-    },
-    {
-      "id": 51,
-      "name": "Rohan Fernandes",
-      "state": "Goa",
-      "area": "Dharbandora",
-      "symptoms": ["Cough", "Cold"]
-    },
-    {
-      "id": 52,
-      "name": "Liza D'Souza",
-      "state": "Goa",
-      "area": "Ponda",
-      "symptoms": ["Headache", "Fever"]
-    },
-    {
-      "id": 53,
-      "name": "Anil Shah",
-      "state": "Gujarat",
-      "area": "Bharuch Tribals",
-      "symptoms": ["Fatigue", "Joint Pain"]
-    },
-    {
-      "id": 54,
-      "name": "Priya Mehta",
-      "state": "Gujarat",
-      "area": "Gir Forest Region",
-      "symptoms": ["Sore Throat", "Shortness of Breath"]
-    },
-    {
-      "id": 55,
-      "name": "Ramesh Chawla",
-      "state": "Haryana",
-      "area": "Mewat",
-      "symptoms": ["Cold", "Cough"]
-    },
-    {
-      "id": 56,
-      "name": "Kavita Malik",
-      "state": "Haryana",
-      "area": "Kalka",
-      "symptoms": ["Headache", "Vomiting"]
-    },
-    {
-      "id": 57,
-      "name": "Vikas Rana",
-      "state": "Himachal Pradesh",
-      "area": "Tissa",
-      "symptoms": ["Fever", "Breathing Difficulty"]
-    },
-    {
-      "id": 58,
-      "name": "Pooja Thakur",
-      "state": "Himachal Pradesh",
-      "area": "Kaza",
-      "symptoms": ["Fatigue", "Chest Pain"]
-    },
-    {
-      "id": 59,
-      "name": "Amit Kumar",
-      "state": "Jharkhand",
-      "area": "Saranda",
-      "symptoms": ["Cough", "Skin Rash"]
-    },
-    {
-      "id": 60,
-      "name": "Ritu Kumari",
-      "state": "Jharkhand",
-      "area": "Dumka",
-      "symptoms": ["Cold", "Itching"]
-    },
-    {
-      "id": 61,
-      "name": "Vishal Shetty",
-      "state": "Karnataka",
-      "area": "Gokarna Hinterlands",
-      "symptoms": ["Dizziness", "Chills"]
-    },
-    {
-      "id": 62,
-      "name": "Anjana Nair",
-      "state": "Kerala",
-      "area": "Attappady",
-      "symptoms": ["Sore Throat", "Loss of Appetite"]
-    },
-    {
-      "id": 63,
-      "name": "Rohit Singh",
-      "state": "Madhya Pradesh",
-      "area": "Sheopur",
-      "symptoms": ["Body Ache", "Skin Rash"]
-    },
-    {
-      "id": 64,
-      "name": "Sneha Kulkarni",
-      "state": "Maharashtra",
-      "area": "Sawantwadi",
-      "symptoms": ["Headache", "Fever"]
-    },
-    {
-      "id": 65,
-      "name": "Ningthou Singh",
-      "state": "Manipur",
-      "area": "Senapati",
-      "symptoms": ["Cough", "Fatigue"]
-    },
-    {
-      "id": 66,
-      "name": "Meghna Roy",
-      "state": "Meghalaya",
-      "area": "Baghmara",
-      "symptoms": ["Shortness of Breath", "Chest Pain"]
-    },
-    {
-      "id": 67,
-      "name": "Tashi Zangmo",
-      "state": "Arunachal Pradesh",
-      "area": "Mechuka",
-      "symptoms": ["Joint Pain", "Fatigue"]
-    },
-    {
-      "id": 68,
-      "name": "Rajesh Choudhury",
-      "state": "Odisha",
-      "area": "Baliguda",
-      "symptoms": ["Cold", "Vomiting"]
-    },
-    {
-      "id": 69,
-      "name": "Simran Grewal",
-      "state": "Punjab",
-      "area": "Pathankot",
-      "symptoms": ["Fever", "Nausea"]
-    },
-    {
-      "id": 70,
-      "name": "Ravi Singh",
-      "state": "Rajasthan",
-      "area": "Barmer",
-      "symptoms": ["Skin Rash", "Fatigue"]
-    },
-    {
-      "id": 71,
-      "name": "Anjali Basu",
-      "state": "Sikkim",
-      "area": "Lachung",
-      "symptoms": ["Headache", "Breathing Difficulty"]
-    },
-    {
-      "id": 72,
-      "name": "Vikram Iyer",
-      "state": "Tamil Nadu",
-      "area": "Valparai",
-      "symptoms": ["Loss of Appetite", "Chest Pain"]
-    },
-    {
-      "id": 73,
-      "name": "Manisha Reddy",
-      "state": "Telangana",
-      "area": "Mulugu",
-      "symptoms": ["Cough", "Cold"]
-    },
-    {
-      "id": 74,
-      "name": "Dipankar Das",
-      "state": "Tripura",
-      "area": "Amarpur",
-      "symptoms": ["Body Ache", "Nausea"]
-    },
-    {
-      "id": 75,
-      "name": "Priya Verma",
-      "state": "Uttar Pradesh",
-      "area": "Chitrakoot",
-      "symptoms": ["Shortness of Breath", "Chest Pain"]
-    },
-    {
-      "id": 76,
-      "name": "Miguel Fernandes",
-      "state": "Uttarakhand",
-      "area": "Chopta",
-      "symptoms": ["Headache", "Fever"]
-    },
-    {
-      "id": 77,
-      "name": "Ravi Patel",
-      "state": "West Bengal",
-      "area": "Sandakphu",
-      "symptoms": ["Fatigue", "Dizziness"]
-    },
-    {
-      "id": 78,
-      "name": "Poonam Sharma",
-      "state": "West Bengal",
-      "area": "Jhargram",
-      "symptoms": ["Cold", "Cough"]
-    }
-  ];
+    "id": 41,
+    "name": "Advik",
+    "age": 39,
+    "gender": "Male",
+    "state": "Andhra Pradesh",
+    "area": "Vizag",
+    "symptoms": ["Sore throat", "Nausea"]
+  },
+  {
+    "id": 42,
+    "name": "Kavya",
+    "age": 27,
+    "gender": "Female",
+    "state": "Uttar Pradesh",
+    "area": "Lucknow",
+    "symptoms": ["Cough", "Loss of taste"]
+  },
+  {
+    "id": 43,
+    "name": "Anay",
+    "age": 45,
+    "gender": "Male",
+    "state": "Madhya Pradesh",
+    "area": "Bhopal",
+    "symptoms": ["Chest pain", "Fatigue"]
+  },
+  {
+    "id": 44,
+    "name": "Myra",
+    "age": 26,
+    "gender": "Female",
+    "state": "Bihar",
+    "area": "Gaya",
+    "symptoms": ["Fever", "Runny nose"]
+  },
+  {
+    "id": 45,
+    "name": "Krishna",
+    "age": 38,
+    "gender": "Male",
+    "state": "Jharkhand",
+    "area": "Dhanbad",
+    "symptoms": ["Fatigue", "Dry cough"]
+  },
+  {
+    "id": 46,
+    "name": "Sanvi",
+    "age": 23,
+    "gender": "Female",
+    "state": "Odisha",
+    "area": "Cuttack",
+    "symptoms": ["Loss of taste", "Headache"]
+  },
+  {
+    "id": 47,
+    "name": "Aarav",
+    "age": 49,
+    "gender": "Male",
+    "state": "Punjab",
+    "area": "Ludhiana",
+    "symptoms": ["Shortness of breath"]
+  },
+  {
+    "id": 48,
+    "name": "Anika",
+    "age": 31,
+    "gender": "Female",
+    "state": "Haryana",
+    "area": "Faridabad",
+    "symptoms": ["Fever", "Nausea"]
+  },
+  {
+    "id": 49,
+    "name": "Veer",
+    "age": 36,
+    "gender": "Male",
+    "state": "Chhattisgarh",
+    "area": "Bilaspur",
+    "symptoms": ["Chest pain", "Sore throat"]
+  },
+  {
+    "id": 50,
+    "name": "Prisha",
+    "age": 25,
+    "gender": "Female",
+    "state": "Kerala",
+    "area": "Kozhikode",
+    "symptoms": ["Loss of smell", "Fatigue"]
+  },
+  {
+    "id": 51,
+    "name": "Reyansh",
+    "age": 43,
+    "gender": "Male",
+    "state": "Tamil Nadu",
+    "area": "Salem",
+    "symptoms": ["Fever", "Dry cough"]
+  },
+  {
+    "id": 52,
+    "name": "Inaaya",
+    "age": 29,
+    "gender": "Female",
+    "state": "Rajasthan",
+    "area": "Jodhpur",
+    "symptoms": ["Fatigue", "Headache"]
+  },
+  {
+    "id": 53,
+    "name": "Hridaan",
+    "age": 41,
+    "gender": "Male",
+    "state": "West Bengal",
+    "area": "Howrah",
+    "symptoms": ["Sore throat", "Cough"]
+  },
+  {
+    "id": 54,
+    "name": "Anvi",
+    "age": 30,
+    "gender": "Female",
+    "state": "Uttarakhand",
+    "area": "Nainital",
+    "symptoms": ["Runny nose"]
+  },
+  {
+    "id": 55,
+    "name": "Ayaan",
+    "age": 34,
+    "gender": "Male",
+    "state": "Gujarat",
+    "area": "Vadodara",
+    "symptoms": ["Nausea", "Fatigue"]
+  },
+  {
+    "id": 56,
+    "name": "Diya",
+    "age": 32,
+    "gender": "Female",
+    "state": "Assam",
+    "area": "Guwahati",
+    "symptoms": ["Fever", "Loss of smell"]
+  },
+  {
+    "id": 57,
+    "name": "Ivaan",
+    "age": 37,
+    "gender": "Male",
+    "state": "Manipur",
+    "area": "Imphal East",
+    "symptoms": ["Chest pain"]
+  },
+  {
+    "id": 58,
+    "name": "Ridhi",
+    "age": 28,
+    "gender": "Female",
+    "state": "Nagaland",
+    "area": "Dimapur",
+    "symptoms": ["Fatigue", "Dry cough"]
+  },
+  {
+    "id": 59,
+    "name": "Yug",
+    "age": 39,
+    "gender": "Male",
+    "state": "Meghalaya",
+    "area": "Shillong",
+    "symptoms": ["Sore throat", "Loss of taste"]
+  },
+  {
+    "id": 60,
+    "name": "Kiara",
+    "age": 35,
+    "gender": "Female",
+    "state": "Mizoram",
+    "area": "Lunglei",
+    "symptoms": ["Fever", "Runny nose"]
+  },
+  {
+    "id": 61,
+    "name": "Vivaan",
+    "age": 42,
+    "gender": "Male",
+    "state": "Tripura",
+    "area": "Agartala",
+    "symptoms": ["Fever", "Headache"]
+  },
+  {
+    "id": 62,
+    "name": "Tara",
+    "age": 24,
+    "gender": "Female",
+    "state": "Himachal Pradesh",
+    "area": "Shimla",
+    "symptoms": ["Cough", "Fatigue"]
+  },
+  {
+    "id": 63,
+    "name": "Atharv",
+    "age": 33,
+    "gender": "Male",
+    "state": "Goa",
+    "area": "Panaji",
+    "symptoms": ["Loss of taste", "Shortness of breath"]
+  },
+  {
+    "id": 64,
+    "name": "Saanvi",
+    "age": 29,
+    "gender": "Female",
+    "state": "Sikkim",
+    "area": "Gangtok",
+    "symptoms": ["Fever", "Dry cough"]
+  },
+  {
+    "id": 65,
+    "name": "Kabir",
+    "age": 36,
+    "gender": "Male",
+    "state": "Delhi",
+    "area": "Dwarka",
+    "symptoms": ["Headache", "Sore throat"]
+  },
+  {
+    "id": 66,
+    "name": "Meera",
+    "age": 27,
+    "gender": "Female",
+    "state": "Punjab",
+    "area": "Amritsar",
+    "symptoms": ["Fatigue", "Chest pain"]
+  },
+  {
+    "id": 67,
+    "name": "Neil",
+    "age": 44,
+    "gender": "Male",
+    "state": "Karnataka",
+    "area": "Mangalore",
+    "symptoms": ["Nausea", "Cough"]
+  },
+  {
+    "id": 68,
+    "name": "Ishita",
+    "age": 31,
+    "gender": "Female",
+    "state": "Maharashtra",
+    "area": "Nashik",
+    "symptoms": ["Loss of smell", "Runny nose"]
+  },
+  {
+    "id": 69,
+    "name": "Parth",
+    "age": 38,
+    "gender": "Male",
+    "state": "Rajasthan",
+    "area": "Udaipur",
+    "symptoms": ["Fever", "Loss of taste"]
+  },
+  {
+    "id": 70,
+    "name": "Riya",
+    "age": 25,
+    "gender": "Female",
+    "state": "Gujarat",
+    "area": "Rajkot",
+    "symptoms": ["Dry cough", "Shortness of breath"]
+  },
+  {
+    "id": 71,
+    "name": "Dev",
+    "age": 40,
+    "gender": "Male",
+    "state": "Bihar",
+    "area": "Patna",
+    "symptoms": ["Chest pain", "Fever"]
+  },
+  {
+    "id": 72,
+    "name": "Zara",
+    "age": 28,
+    "gender": "Female",
+    "state": "Odisha",
+    "area": "Puri",
+    "symptoms": ["Sore throat", "Headache"]
+  },
+  {
+    "id": 73,
+    "name": "Aarush",
+    "age": 35,
+    "gender": "Male",
+    "state": "Uttar Pradesh",
+    "area": "Varanasi",
+    "symptoms": ["Fatigue", "Loss of smell"]
+  },
+  {
+    "id": 74,
+    "name": "Avni",
+    "age": 32,
+    "gender": "Female",
+    "state": "Madhya Pradesh",
+    "area": "Indore",
+    "symptoms": ["Runny nose", "Nausea"]
+  },
+  {
+    "id": 75,
+    "name": "Rudra",
+    "age": 39,
+    "gender": "Male",
+    "state": "Telangana",
+    "area": "Secunderabad",
+    "symptoms": ["Cough", "Loss of taste"]
+  },
+  {
+    "id": 76,
+    "name": "Naira",
+    "age": 26,
+    "gender": "Female",
+    "state": "Chhattisgarh",
+    "area": "Raigarh",
+    "symptoms": ["Fever", "Fatigue"]
+  },
+  {
+    "id": 77,
+    "name": "Yuvan",
+    "age": 47,
+    "gender": "Male",
+    "state": "Jharkhand",
+    "area": "Ranchi",
+    "symptoms": ["Dry cough", "Sore throat"]
+  },
+  {
+    "id": 78,
+    "name": "Mahira",
+    "age": 30,
+    "gender": "Female",
+    "state": "Kerala",
+    "area": "Thrissur",
+    "symptoms": ["Loss of smell", "Headache"]
+  },
+  {
+    "id": 79,
+    "name": "Laksh",
+    "age": 37,
+    "gender": "Male",
+    "state": "Tamil Nadu",
+    "area": "Tirunelveli",
+    "symptoms": ["Nausea", "Fatigue"]
+  },
+  {
+    "id": 80,
+    "name": "Anaya",
+    "age": 34,
+    "gender": "Female",
+    "state": "Karnataka",
+    "area": "Hubli",
+    "symptoms": ["Shortness of breath", "Fever"]
+  },
+  {
+    "id": 81,
+    "name": "Reyansh",
+    "age": 45,
+    "gender": "Male",
+    "state": "Assam",
+    "area": "Jorhat",
+    "symptoms": ["Cough", "Fever"]
+  },
+  {
+    "id": 82,
+    "name": "Diya",
+    "age": 23,
+    "gender": "Female",
+    "state": "West Bengal",
+    "area": "Durgapur",
+    "symptoms": ["Sore throat", "Fatigue"]
+  },
+  {
+    "id": 83,
+    "name": "Krishna",
+    "age": 40,
+    "gender": "Male",
+    "state": "Haryana",
+    "area": "Panipat",
+    "symptoms": ["Chest pain", "Dry cough"]
+  },
+  {
+    "id": 84,
+    "name": "Kritika",
+    "age": 29,
+    "gender": "Female",
+    "state": "Maharashtra",
+    "area": "Solapur",
+    "symptoms": ["Loss of smell", "Headache"]
+  },
+  {
+    "id": 85,
+    "name": "Arjun",
+    "age": 38,
+    "gender": "Male",
+    "state": "Uttarakhand",
+    "area": "Rishikesh",
+    "symptoms": ["Shortness of breath", "Cough"]
+  },
+  {
+    "id": 86,
+    "name": "Ira",
+    "age": 25,
+    "gender": "Female",
+    "state": "Gujarat",
+    "area": "Bhuj",
+    "symptoms": ["Runny nose", "Fever"]
+  },
+  {
+    "id": 87,
+    "name": "Siddharth",
+    "age": 41,
+    "gender": "Male",
+    "state": "Punjab",
+    "area": "Bathinda",
+    "symptoms": ["Fatigue", "Loss of taste"]
+  },
+  {
+    "id": 88,
+    "name": "Nitya",
+    "age": 31,
+    "gender": "Female",
+    "state": "Odisha",
+    "area": "Cuttack",
+    "symptoms": ["Nausea", "Fever"]
+  },
+  {
+    "id": 89,
+    "name": "Veer",
+    "age": 36,
+    "gender": "Male",
+    "state": "Bihar",
+    "area": "Muzaffarpur",
+    "symptoms": ["Dry cough", "Sore throat"]
+  },
+  {
+    "id": 90,
+    "name": "Aadhya",
+    "age": 28,
+    "gender": "Female",
+    "state": "Chhattisgarh",
+    "area": "Bilaspur",
+    "symptoms": ["Fever", "Chest pain"]
+  },
+  {
+    "id": 91,
+    "name": "Arnav",
+    "age": 39,
+    "gender": "Male",
+    "state": "Jharkhand",
+    "area": "Dhanbad",
+    "symptoms": ["Loss of taste", "Fatigue"]
+  },
+  {
+    "id": 92,
+    "name": "Mira",
+    "age": 26,
+    "gender": "Female",
+    "state": "Telangana",
+    "area": "Nizamabad",
+    "symptoms": ["Shortness of breath", "Dry cough"]
+  },
+  {
+    "id": 93,
+    "name": "Shaurya",
+    "age": 44,
+    "gender": "Male",
+    "state": "Karnataka",
+    "area": "Belgaum",
+    "symptoms": ["Headache", "Runny nose"]
+  },
+  {
+    "id": 94,
+    "name": "Anvi",
+    "age": 30,
+    "gender": "Female",
+    "state": "Tamil Nadu",
+    "area": "Erode",
+    "symptoms": ["Cough", "Loss of smell"]
+  },
+  {
+    "id": 95,
+    "name": "Aryan",
+    "age": 34,
+    "gender": "Male",
+    "state": "Kerala",
+    "area": "Alappuzha",
+    "symptoms": ["Nausea", "Fever"]
+  },
+  {
+    "id": 96,
+    "name": "Ridhima",
+    "age": 27,
+    "gender": "Female",
+    "state": "Rajasthan",
+    "area": "Kota",
+    "symptoms": ["Sore throat", "Fatigue"]
+  },
+  {
+    "id": 97,
+    "name": "Aditya",
+    "age": 43,
+    "gender": "Male",
+    "state": "Uttar Pradesh",
+    "area": "Jhansi",
+    "symptoms": ["Loss of taste", "Dry cough"]
+  },
+  {
+    "id": 98,
+    "name": "Pihu",
+    "age": 22,
+    "gender": "Female",
+    "state": "Madhya Pradesh",
+    "area": "Ujjain",
+    "symptoms": ["Chest pain", "Headache"]
+  },
+  {
+    "id": 99,
+    "name": "Ishaan",
+    "age": 37,
+    "gender": "Male",
+    "state": "Assam",
+    "area": "Tezpur",
+    "symptoms": ["Cough", "Fatigue"]
+  },
+  {
+    "id": 100,
+    "name": "Kavya",
+    "age": 33,
+    "gender": "Female",
+    "state": "Himachal Pradesh",
+    "area": "Kullu",
+    "symptoms": ["Runny nose", "Fever"]
+  },
+  {
+    "id": 101,
+    "name": "Vivaan",
+    "age": 42,
+    "gender": "Male",
+    "state": "Goa",
+    "area": "Vasco da Gama",
+    "symptoms": ["Fatigue", "Headache"]
+  },
+  {
+    "id": 102,
+    "name": "Saanvi",
+    "age": 24,
+    "gender": "Female",
+    "state": "Tripura",
+    "area": "Agartala",
+    "symptoms": ["Fever", "Shortness of breath"]
+  },
+  {
+    "id": 103,
+    "name": "Ritvik",
+    "age": 35,
+    "gender": "Male",
+    "state": "Nagaland",
+    "area": "Kohima",
+    "symptoms": ["Dry cough", "Loss of smell"]
+  },
+  {
+    "id": 104,
+    "name": "Meera",
+    "age": 32,
+    "gender": "Female",
+    "state": "Sikkim",
+    "area": "Namchi",
+    "symptoms": ["Runny nose", "Fever"]
+  },
+  {
+    "id": 105,
+    "name": "Yuvraj",
+    "age": 29,
+    "gender": "Male",
+    "state": "Manipur",
+    "area": "Imphal",
+    "symptoms": ["Cough", "Fatigue"]
+  },
+  {
+    "id": 106,
+    "name": "Tanya",
+    "age": 27,
+    "gender": "Female",
+    "state": "Mizoram",
+    "area": "Aizawl",
+    "symptoms": ["Headache", "Loss of taste"]
+  },
+  {
+    "id": 107,
+    "name": "Kabir",
+    "age": 36,
+    "gender": "Male",
+    "state": "Arunachal Pradesh",
+    "area": "Itanagar",
+    "symptoms": ["Sore throat", "Fever"]
+  },
+  {
+    "id": 108,
+    "name": "Nandini",
+    "age": 34,
+    "gender": "Female",
+    "state": "Meghalaya",
+    "area": "Shillong",
+    "symptoms": ["Chest pain", "Cough"]
+  },
+  {
+    "id": 109,
+    "name": "Dev",
+    "age": 31,
+    "gender": "Male",
+    "state": "Punjab",
+    "area": "Amritsar",
+    "symptoms": ["Loss of smell", "Fatigue"]
+  },
+  {
+    "id": 110,
+    "name": "Rhea",
+    "age": 26,
+    "gender": "Female",
+    "state": "Karnataka",
+    "area": "Mysore",
+    "symptoms": ["Nausea", "Fever"]
+  },
+  {
+    "id": 111,
+    "name": "Shaurya",
+    "age": 38,
+    "gender": "Male",
+    "state": "Tamil Nadu",
+    "area": "Trichy",
+    "symptoms": ["Dry cough", "Shortness of breath"]
+  },
+  {
+    "id": 112,
+    "name": "Ishita",
+    "age": 30,
+    "gender": "Female",
+    "state": "Maharashtra",
+    "area": "Nashik",
+    "symptoms": ["Runny nose", "Headache"]
+  },
+  {
+    "id": 113,
+    "name": "Aarav",
+    "age": 41,
+    "gender": "Male",
+    "state": "Haryana",
+    "area": "Faridabad",
+    "symptoms": ["Loss of taste", "Sore throat"]
+  },
+  {
+    "id": 114,
+    "name": "Myra",
+    "age": 28,
+    "gender": "Female",
+    "state": "Odisha",
+    "area": "Bhubaneswar",
+    "symptoms": ["Fever", "Fatigue"]
+  },
+  {
+    "id": 115,
+    "name": "Kunal",
+    "age": 33,
+    "gender": "Male",
+    "state": "Rajasthan",
+    "area": "Bikaner",
+    "symptoms": ["Dry cough", "Headache"]
+  },
+  {
+    "id": 116,
+    "name": "Anika",
+    "age": 25,
+    "gender": "Female",
+    "state": "Kerala",
+    "area": "Thrissur",
+    "symptoms": ["Chest pain", "Loss of smell"]
+  },
+  {
+    "id": 117,
+    "name": "Ayaan",
+    "age": 37,
+    "gender": "Male",
+    "state": "Madhya Pradesh",
+    "area": "Indore",
+    "symptoms": ["Nausea", "Cough"]
+  },
+  {
+    "id": 118,
+    "name": "Navya",
+    "age": 29,
+    "gender": "Female",
+    "state": "Telangana",
+    "area": "Karimnagar",
+    "symptoms": ["Fatigue", "Fever"]
+  },
+  {
+    "id": 119,
+    "name": "Rohan",
+    "age": 44,
+    "gender": "Male",
+    "state": "Jharkhand",
+    "area": "Jamshedpur",
+    "symptoms": ["Shortness of breath", "Loss of taste"]
+  },
+  {
+    "id": 120,
+    "name": "Ishani",
+    "age": 31,
+    "gender": "Female",
+    "state": "Bihar",
+    "area": "Patna",
+    "symptoms": ["Runny nose", "Sore throat"]
+  },
+  {
+    "id": 121,
+    "name": "Aarush",
+    "age": 35,
+    "gender": "Male",
+    "state": "Chhattisgarh",
+    "area": "Raipur",
+    "symptoms": ["Cough", "Headache"]
+  },
+  {
+    "id": 122,
+    "name": "Diya",
+    "age": 27,
+    "gender": "Female",
+    "state": "Uttarakhand",
+    "area": "Dehradun",
+    "symptoms": ["Fever", "Fatigue"]
+  },
+  {
+    "id": 123,
+    "name": "Rudra",
+    "age": 43,
+    "gender": "Male",
+    "state": "Himachal Pradesh",
+    "area": "Dharamshala",
+    "symptoms": ["Loss of taste", "Dry cough"]
+  },
+  {
+    "id": 124,
+    "name": "Kiara",
+    "age": 29,
+    "gender": "Female",
+    "state": "Uttar Pradesh",
+    "area": "Varanasi",
+    "symptoms": ["Runny nose", "Chest pain"]
+  },
+  {
+    "id": 125,
+    "name": "Neil",
+    "age": 31,
+    "gender": "Male",
+    "state": "Andhra Pradesh",
+    "area": "Vijayawada",
+    "symptoms": ["Sore throat", "Fever"]
+  },
+  {
+    "id": 126,
+    "name": "Sanika",
+    "age": 24,
+    "gender": "Female",
+    "state": "Gujarat",
+    "area": "Rajkot",
+    "symptoms": ["Dry cough", "Loss of smell"]
+  },
+  {
+    "id": 127,
+    "name": "Parth",
+    "age": 33,
+    "gender": "Male",
+    "state": "West Bengal",
+    "area": "Asansol",
+    "symptoms": ["Headache", "Fever"]
+  },
+  {
+    "id": 128,
+    "name": "Amaira",
+    "age": 28,
+    "gender": "Female",
+    "state": "Delhi",
+    "area": "Saket",
+    "symptoms": ["Shortness of breath", "Fatigue"]
+  },
+  {
+    "id": 129,
+    "name": "Dhruv",
+    "age": 39,
+    "gender": "Male",
+    "state": "Karnataka",
+    "area": "Mangalore",
+    "symptoms": ["Chest pain", "Cough"]
+  },
+  {
+    "id": 130,
+    "name": "Aadhya",
+    "age": 30,
+    "gender": "Female",
+    "state": "Maharashtra",
+    "area": "Nagpur",
+    "symptoms": ["Nausea", "Loss of taste"]
+  },
+  {
+    "id": 131,
+    "name": "Rishi",
+    "age": 42,
+    "gender": "Male",
+    "state": "Assam",
+    "area": "Silchar",
+    "symptoms": ["Sore throat", "Headache"]
+  },
+  {
+    "id": 132,
+    "name": "Anvi",
+    "age": 25,
+    "gender": "Female",
+    "state": "Rajasthan",
+    "area": "Udaipur",
+    "symptoms": ["Fever", "Runny nose"]
+  },
+  {
+    "id": 133,
+    "name": "Kabir",
+    "age": 38,
+    "gender": "Male",
+    "state": "Telangana",
+    "area": "Warangal",
+    "symptoms": ["Dry cough", "Fatigue"]
+  },
+  {
+    "id": 134,
+    "name": "Vanya",
+    "age": 32,
+    "gender": "Female",
+    "state": "Tamil Nadu",
+    "area": "Salem",
+    "symptoms": ["Cough", "Shortness of breath"]
+  },
+  {
+    "id": 135,
+    "name": "Advik",
+    "age": 34,
+    "gender": "Male",
+    "state": "Kerala",
+    "area": "Kollam",
+    "symptoms": ["Fever", "Loss of smell"]
+  },
+  {
+    "id": 136,
+    "name": "Mira",
+    "age": 29,
+    "gender": "Female",
+    "state": "Punjab",
+    "area": "Ludhiana",
+    "symptoms": ["Chest pain", "Dry cough"]
+  },
+  {
+    "id": 137,
+    "name": "Reyansh",
+    "age": 36,
+    "gender": "Male",
+    "state": "Jharkhand",
+    "area": "Dhanbad",
+    "symptoms": ["Fatigue", "Headache"]
+  },
+  {
+    "id": 138,
+    "name": "Avni",
+    "age": 31,
+    "gender": "Female",
+    "state": "Odisha",
+    "area": "Cuttack",
+    "symptoms": ["Fever", "Sore throat"]
+  },
+  {
+    "id": 139,
+    "name": "Vihaan",
+    "age": 40,
+    "gender": "Male",
+    "state": "Madhya Pradesh",
+    "area": "Jabalpur",
+    "symptoms": ["Nausea", "Fatigue"]
+  },
+  {
+    "id": 140,
+    "name": "Prisha",
+    "age": 26,
+    "gender": "Female",
+    "state": "Bihar",
+    "area": "Gaya",
+    "symptoms": ["Loss of smell", "Runny nose"]
+  },
+  {
+    "id": 141,
+    "name": "Arnav",
+    "age": 33,
+    "gender": "Male",
+    "state": "Sikkim",
+    "area": "Namchi",
+    "symptoms": ["Cough", "Fever"]
+  },
+  {
+    "id": 142,
+    "name": "Myra",
+    "age": 28,
+    "gender": "Female",
+    "state": "Meghalaya",
+    "area": "Shillong",
+    "symptoms": ["Headache", "Sore throat"]
+  },
+  {
+    "id": 143,
+    "name": "Vivaan",
+    "age": 35,
+    "gender": "Male",
+    "state": "Tripura",
+    "area": "Agartala",
+    "symptoms": ["Fever", "Fatigue"]
+  },
+  {
+    "id": 144,
+    "name": "Naira",
+    "age": 30,
+    "gender": "Female",
+    "state": "Manipur",
+    "area": "Imphal",
+    "symptoms": ["Dry cough", "Chest pain"]
+  },
+  {
+    "id": 145,
+    "name": "Ayaan",
+    "age": 40,
+    "gender": "Male",
+    "state": "Nagaland",
+    "area": "Kohima",
+    "symptoms": ["Loss of taste", "Shortness of breath"]
+  },
+  {
+    "id": 146,
+    "name": "Inaaya",
+    "age": 26,
+    "gender": "Female",
+    "state": "Mizoram",
+    "area": "Aizawl",
+    "symptoms": ["Fatigue", "Cough"]
+  },
+  {
+    "id": 147,
+    "name": "Krishna",
+    "age": 31,
+    "gender": "Male",
+    "state": "Goa",
+    "area": "Vasco da Gama",
+    "symptoms": ["Headache", "Loss of smell"]
+  },
+  {
+    "id": 148,
+    "name": "Saanvi",
+    "age": 29,
+    "gender": "Female",
+    "state": "Chandigarh",
+    "area": "Sector 17",
+    "symptoms": ["Fever", "Sore throat"]
+  },
+  {
+    "id": 149,
+    "name": "Ishaan",
+    "age": 34,
+    "gender": "Male",
+    "state": "Haryana",
+    "area": "Panipat",
+    "symptoms": ["Runny nose", "Cough"]
+  },
+  {
+    "id": 150,
+    "name": "Anaya",
+    "age": 32,
+    "gender": "Female",
+    "state": "Jammu and Kashmir",
+    "area": "Srinagar",
+    "symptoms": ["Fever", "Shortness of breath"]
+  },
+  {
+    "id": 151,
+    "name": "Laksh",
+    "age": 37,
+    "gender": "Male",
+    "state": "Ladakh",
+    "area": "Leh",
+    "symptoms": ["Chest pain", "Dry cough"]
+  },
+  {
+    "id": 152,
+    "name": "Meera",
+    "age": 27,
+    "gender": "Female",
+    "state": "Andaman and Nicobar Islands",
+    "area": "Port Blair",
+    "symptoms": ["Nausea", "Fever"]
+  },
+  {
+    "id": 153,
+    "name": "Aarav",
+    "age": 36,
+    "gender": "Male",
+    "state": "Puducherry",
+    "area": "Karaikal",
+    "symptoms": ["Loss of smell", "Headache"]
+  },
+  {
+    "id": 154,
+    "name": "Reeva",
+    "age": 25,
+    "gender": "Female",
+    "state": "Daman and Diu",
+    "area": "Diu",
+    "symptoms": ["Fatigue", "Fever"]
+  },
+  {
+    "id": 155,
+    "name": "Yug",
+    "age": 39,
+    "gender": "Male",
+    "state": "Dadra and Nagar Haveli",
+    "area": "Silvassa",
+    "symptoms": ["Shortness of breath", "Dry cough"]
+  },
+  {
+    "id": 156,
+    "name": "Tara",
+    "age": 29,
+    "gender": "Female",
+    "state": "Lakshadweep",
+    "area": "Kavaratti",
+    "symptoms": ["Loss of taste", "Fatigue"]
+  },
+  {
+    "id": 157,
+    "name": "Aryan",
+    "age": 38,
+    "gender": "Male",
+    "state": "Kerala",
+    "area": "Kannur",
+    "symptoms": ["Fever", "Nausea"]
+  },
+  {
+    "id": 158,
+    "name": "Navya",
+    "age": 30,
+    "gender": "Female",
+    "state": "Madhya Pradesh",
+    "area": "Indore",
+    "symptoms": ["Cough", "Sore throat"]
+  },
+  {
+    "id": 159,
+    "name": "Kunal",
+    "age": 41,
+    "gender": "Male",
+    "state": "Rajasthan",
+    "area": "Bikaner",
+    "symptoms": ["Headache", "Loss of smell"]
+  },
+  {
+    "id": 160,
+    "name": "Ira",
+    "age": 28,
+    "gender": "Female",
+    "state": "Odisha",
+    "area": "Berhampur",
+    "symptoms": ["Chest pain", "Fatigue"]
+  },
+  {
+    "id": 161,
+    "name": "Veer",
+    "age": 35,
+    "gender": "Male",
+    "state": "West Bengal",
+    "area": "Siliguri",
+    "symptoms": ["Fever", "Dry cough"]
+  },
+  {
+    "id": 162,
+    "name": "Riya",
+    "age": 26,
+    "gender": "Female",
+    "state": "Jharkhand",
+    "area": "Jamshedpur",
+    "symptoms": ["Loss of taste", "Sore throat"]
+  },
+  {
+    "id": 163,
+    "name": "Dev",
+    "age": 33,
+    "gender": "Male",
+    "state": "Chhattisgarh",
+    "area": "Bilaspur",
+    "symptoms": ["Nausea", "Fever"]
+  },
+  {
+    "id": 164,
+    "name": "Aisha",
+    "age": 30,
+    "gender": "Female",
+    "state": "Uttarakhand",
+    "area": "Rishikesh",
+    "symptoms": ["Cough", "Chest pain"]
+  },
+  {
+    "id": 165,
+    "name": "Nirav",
+    "age": 37,
+    "gender": "Male",
+    "state": "Gujarat",
+    "area": "Rajkot",
+    "symptoms": ["Headache", "Fever"]
+  },
+  {
+    "id": 166,
+    "name": "Vanya",
+    "age": 29,
+    "gender": "Female",
+    "state": "Himachal Pradesh",
+    "area": "Manali",
+    "symptoms": ["Shortness of breath", "Fatigue"]
+  },
+  {
+    "id": 167,
+    "name": "Kabir",
+    "age": 40,
+    "gender": "Male",
+    "state": "Assam",
+    "area": "Dibrugarh",
+    "symptoms": ["Dry cough", "Nausea"]
+  },
+  {
+    "id": 168,
+    "name": "Diya",
+    "age": 31,
+    "gender": "Female",
+    "state": "Bihar",
+    "area": "Gaya",
+    "symptoms": ["Loss of smell", "Sore throat"]
+  },
+  {
+    "id": 169,
+    "name": "Rudra",
+    "age": 36,
+    "gender": "Male",
+    "state": "Punjab",
+    "area": "Patiala",
+    "symptoms": ["Fatigue", "Runny nose"]
+  },
+  {
+    "id": 170,
+    "name": "Kritika",
+    "age": 27,
+    "gender": "Female",
+    "state": "Delhi",
+    "area": "Dwarka",
+    "symptoms": ["Fever", "Chest pain"]
+  },
+  {
+    "id": 171,
+    "name": "Arush",
+    "age": 34,
+    "gender": "Male",
+    "state": "Uttar Pradesh",
+    "area": "Varanasi",
+    "symptoms": ["Loss of taste", "Dry cough"]
+  },
+  {
+    "id": 172,
+    "name": "Tanvi",
+    "age": 28,
+    "gender": "Female",
+    "state": "Karnataka",
+    "area": "Mysuru",
+    "symptoms": ["Cough", "Fatigue"]
+  },
+  {
+    "id": 173,
+    "name": "Neil",
+    "age": 39,
+    "gender": "Male",
+    "state": "Tamil Nadu",
+    "area": "Madurai",
+    "symptoms": ["Nausea", "Fever"]
+  },
+  {
+    "id": 174,
+    "name": "Avni",
+    "age": 26,
+    "gender": "Female",
+    "state": "Andhra Pradesh",
+    "area": "Tirupati",
+    "symptoms": ["Headache", "Shortness of breath"]
+  },
+  {
+    "id": 175,
+    "name": "Raghav",
+    "age": 38,
+    "gender": "Male",
+    "state": "Telangana",
+    "area": "Warangal",
+    "symptoms": ["Runny nose", "Cough"]
+  },
+  {
+    "id": 176,
+    "name": "Mira",
+    "age": 30,
+    "gender": "Female",
+    "state": "Maharashtra",
+    "area": "Nashik",
+    "symptoms": ["Fatigue", "Sore throat"]
+  },
+  {
+    "id": 177,
+    "name": "Samar",
+    "age": 32,
+    "gender": "Male",
+    "state": "Rajasthan",
+    "area": "Ajmer",
+    "symptoms": ["Loss of smell", "Chest pain"]
+  },
+  {
+    "id": 178,
+    "name": "Roshni",
+    "age": 29,
+    "gender": "Female",
+    "state": "Kerala",
+    "area": "Thrissur",
+    "symptoms": ["Fever", "Dry cough"]
+  },
+  {
+    "id": 179,
+    "name": "Rehan",
+    "age": 35,
+    "gender": "Male",
+    "state": "Odisha",
+    "area": "Puri",
+    "symptoms": ["Cough", "Headache"]
+  },
+  {
+    "id": 180,
+    "name": "Suhana",
+    "age": 31,
+    "gender": "Female",
+    "state": "Goa",
+    "area": "Margao",
+    "symptoms": ["Loss of taste", "Fever"]
+  },
+  {
+    "id": 181,
+    "name": "Aarav",
+    "age": 34,
+    "gender": "Male",
+    "state": "Haryana",
+    "area": "Panipat",
+    "symptoms": ["Cough", "Fatigue"]
+  },
+  {
+    "id": 182,
+    "name": "Ira",
+    "age": 28,
+    "gender": "Female",
+    "state": "Uttarakhand",
+    "area": "Dehradun",
+    "symptoms": ["Fever", "Loss of smell"]
+  },
+  {
+    "id": 183,
+    "name": "Vivaan",
+    "age": 39,
+    "gender": "Male",
+    "state": "Punjab",
+    "area": "Ludhiana",
+    "symptoms": ["Headache", "Sore throat"]
+  },
+  {
+    "id": 184,
+    "name": "Nisha",
+    "age": 33,
+    "gender": "Female",
+    "state": "Bihar",
+    "area": "Muzaffarpur",
+    "symptoms": ["Dry cough", "Shortness of breath"]
+  },
+  {
+    "id": 185,
+    "name": "Yuvan",
+    "age": 36,
+    "gender": "Male",
+    "state": "Chhattisgarh",
+    "area": "Korba",
+    "symptoms": ["Fever", "Nausea"]
+  },
+  {
+    "id": 186,
+    "name": "Saanvi",
+    "age": 27,
+    "gender": "Female",
+    "state": "Jharkhand",
+    "area": "Hazaribagh",
+    "symptoms": ["Fatigue", "Cough"]
+  },
+  {
+    "id": 187,
+    "name": "Ritik",
+    "age": 30,
+    "gender": "Male",
+    "state": "Odisha",
+    "area": "Balasore",
+    "symptoms": ["Loss of taste", "Fever"]
+  },
+  {
+    "id": 188,
+    "name": "Tanya",
+    "age": 29,
+    "gender": "Female",
+    "state": "Assam",
+    "area": "Tezpur",
+    "symptoms": ["Sore throat", "Headache"]
+  },
+  {
+    "id": 189,
+    "name": "Kunal",
+    "age": 37,
+    "gender": "Male",
+    "state": "Rajasthan",
+    "area": "Udaipur",
+    "symptoms": ["Dry cough", "Loss of smell"]
+  },
+  {
+    "id": 190,
+    "name": "Anaya",
+    "age": 31,
+    "gender": "Female",
+    "state": "Karnataka",
+    "area": "Hubballi",
+    "symptoms": ["Cough", "Runny nose"]
+  },
+  {
+    "id": 191,
+    "name": "Zayan",
+    "age": 38,
+    "gender": "Male",
+    "state": "Kerala",
+    "area": "Alappuzha",
+    "symptoms": ["Fever", "Fatigue"]
+  },
+  {
+    "id": 192,
+    "name": "Aarohi",
+    "age": 26,
+    "gender": "Female",
+    "state": "Tamil Nadu",
+    "area": "Tirunelveli",
+    "symptoms": ["Shortness of breath", "Cough"]
+  },
+  {
+    "id": 193,
+    "name": "Om",
+    "age": 35,
+    "gender": "Male",
+    "state": "Andhra Pradesh",
+    "area": "Kakinada",
+    "symptoms": ["Sore throat", "Fatigue"]
+  },
+  {
+    "id": 194,
+    "name": "Inaaya",
+    "age": 28,
+    "gender": "Female",
+    "state": "Telangana",
+    "area": "Nizamabad",
+    "symptoms": ["Fever", "Nausea"]
+  },
+  {
+    "id": 195,
+    "name": "Harsh",
+    "age": 40,
+    "gender": "Male",
+    "state": "Maharashtra",
+    "area": "Kolhapur",
+    "symptoms": ["Headache", "Dry cough"]
+  },
+  {
+    "id": 196,
+    "name": "Jiya",
+    "age": 29,
+    "gender": "Female",
+    "state": "Uttar Pradesh",
+    "area": "Meerut",
+    "symptoms": ["Loss of taste", "Shortness of breath"]
+  },
+  {
+    "id": 197,
+    "name": "Aditya",
+    "age": 32,
+    "gender": "Male",
+    "state": "West Bengal",
+    "area": "Howrah",
+    "symptoms": ["Runny nose", "Fever"]
+  },
+  {
+    "id": 198,
+    "name": "Meera",
+    "age": 27,
+    "gender": "Female",
+    "state": "Goa",
+    "area": "Panaji",
+    "symptoms": ["Dry cough", "Headache"]
+  },
+  {
+    "id": 199,
+    "name": "Ritesh",
+    "age": 36,
+    "gender": "Male",
+    "state": "Gujarat",
+    "area": "Bhuj",
+    "symptoms": ["Cough", "Sore throat"]
+  },
+  {
+    "id": 200,
+    "name": "Nidhi",
+    "age": 33,
+    "gender": "Female",
+    "state": "Madhya Pradesh",
+    "area": "Sagar",
+    "symptoms": ["Loss of smell", "Fever"]
+  }
+];
+
+
+
+
+
+
+
+
