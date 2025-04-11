@@ -7,11 +7,37 @@
     <meta name="description" content="Lovable Generated Project" />
     <meta name="author" content="Lovable" />
     <meta property="og:image" content="/og-image.png" />
+    
+    <!-- Optional: Add Botpress CSS overrides here if needed -->
+    <style>
+      #bp-web-widget {
+        border-radius: 12px !important;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1) !important;
+      }
+    </style>
   </head>
 
   <body>
     <div id="root"></div>
+    
+    <!-- Your existing scripts -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Botpress Integration (BEFORE </body>) -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/03/22/13/20250322133235-V2ESC7JD.js"></script>
+    
+    <!-- Optional: Custom initialization -->
+    <script>
+      window.addEventListener('load', () => {
+        if (window.botpressWebChat) {
+          window.botpressWebChat.init({
+            hideWidget: false,
+            botName: "DiagnoPredict"
+          });
+        }
+      });
+    </script>
   </body>
 </html>
