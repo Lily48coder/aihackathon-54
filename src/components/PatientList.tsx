@@ -16,6 +16,8 @@ import { cn } from "@/lib/utils";
 interface Patient {
   id: number;
   name: string;
+  age: number;
+  gender: string;
   state: string;
   area: string;
   symptoms: string[];
