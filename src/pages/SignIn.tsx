@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -17,7 +16,24 @@ const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const [emailError, setEmailError] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+
+  const validateEmail = (email: string) => {
+    const gmailRegex = /^[a-zA-Z0-9]+@gmail\.com$/;
+    return gmailRegex.test(email);
+  };
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setEmail(value);
+    
+    if (!validateEmail(value)) {
+      setEmailError("Please use a valid Gmail address (username@gmail.com)");
+    } else {
+      setEmailError("");
+    }
+  };
 
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -31,7 +47,8 @@ const SignIn = () => {
 
   const handleSignIn = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!passwordError) {
+    
+    if (validateEmail(email) && !passwordError) {
       const formData = JSON.parse(localStorage.getItem('signupData') || '{}');
       const userData = {
         name: formData.name || 'Sahiti Sri',
@@ -46,6 +63,12 @@ const SignIn = () => {
         description: "Welcome back to SymptoCamp.",
       });
       navigate("/dashboard");
+    } else {
+      toast({
+        title: "Sign In Error",
+        description: "Please correct the email and password errors.",
+        variant: "destructive"
+      });
     }
   };
 
@@ -66,12 +89,15 @@ const SignIn = () => {
             <Input
               id="email"
               type="email"
-              placeholder="Enter your email"
+              placeholder="Enter your Gmail address"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={handleEmailChange}
               required
-              className="bg-white"
+              className={`bg-white ${emailError ? 'border-red-500 focus:border-red-500' : ''}`}
             />
+            {emailError && (
+              <p className="text-red-500 text-sm mt-1">{emailError}</p>
+            )}
           </div>
           
           <div className="space-y-2">
@@ -133,15 +159,6 @@ const SignIn = () => {
             Create an Account
           </Button>
         </form>
-
-        <Button 
-          variant="ghost" 
-          className="w-full flex items-center justify-center"
-          onClick={() => navigate("/")}
-        >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Return to Home
-        </Button>
       </Card>
     </div>
   );

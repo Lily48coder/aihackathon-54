@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -9,9 +10,26 @@ import { useToast } from "@/hooks/use-toast";
 const PatientSignIn = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const [emailError, setEmailError] = useState("");
+
+  const validateEmail = (email: string) => {
+    const gmailRegex = /^[a-zA-Z0-9]+@gmail\.com$/;
+    return gmailRegex.test(email);
+  };
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setEmail(value);
+    
+    if (!validateEmail(value)) {
+      setEmailError("Please use a valid Gmail address (username@gmail.com)");
+    } else {
+      setEmailError("");
+    }
+  };
 
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -25,12 +43,19 @@ const PatientSignIn = () => {
 
   const handleSignIn = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!passwordError) {
+    
+    if (validateEmail(email) && !passwordError) {
       toast({
         title: "Successfully Signed In!",
         description: "Welcome back to the platform.",
       });
       navigate("/patient/history");
+    } else {
+      toast({
+        title: "Sign In Error",
+        description: "Please correct the email and password errors.",
+        variant: "destructive"
+      });
     }
   };
 
@@ -41,15 +66,21 @@ const PatientSignIn = () => {
         
         <form onSubmit={handleSignIn} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="username" className="text-green-700">Username</Label>
+            <Label htmlFor="email" className="text-green-700">Email</Label>
             <Input
-              id="username"
-              placeholder="Enter your username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              id="email"
+              type="email"
+              placeholder="Enter your Gmail address"
+              value={email}
+              onChange={handleEmailChange}
               required
-              className="border-green-200 focus:border-green-400 focus:ring-green-400"
+              className={`border-green-200 focus:border-green-400 focus:ring-green-400 ${
+                emailError ? 'border-red-500 focus:border-red-500' : ''
+              }`}
             />
+            {emailError && (
+              <p className="text-red-500 text-sm mt-1">{emailError}</p>
+            )}
           </div>
           
           <div className="space-y-2">
@@ -77,14 +108,6 @@ const PatientSignIn = () => {
             Sign In
           </Button>
         </form>
-
-        <Button 
-          variant="outline" 
-          className="w-full border-green-600 text-green-600 hover:bg-green-50"
-          onClick={() => navigate(-1)}
-        >
-          Back
-        </Button>
       </Card>
     </div>
   );

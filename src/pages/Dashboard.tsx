@@ -1,206 +1,176 @@
-
-import { useState, useEffect } from "react";
-import { useAuth } from "@/context/AuthContext";
-import { 
-  Select, 
-  SelectContent, 
-  SelectItem, 
-  SelectTrigger, 
-  SelectValue 
-} from "@/components/ui/select";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { STATES, SYMPTOMS, MOCK_PATIENTS } from "@/data/medical";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
+import { useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
-import { DoctorHeader } from "@/components/DoctorHeader";
-import { PatientStatisticsCard } from "@/components/PatientStatisticsCard";
-import { PatientList } from "@/components/PatientList";
-import { ArrowUpRight, Users } from "lucide-react";
+import { useAuth } from "@/context/AuthContext";
+import { ArrowLeft, Lock, Mail } from "lucide-react";
 
-const Dashboard = () => {
-  const { user } = useAuth();
+const SignIn = () => {
+  const navigate = useNavigate();
   const { toast } = useToast();
-  const [selectedState, setSelectedState] = useState<string>("");
-  const [selectedArea, setSelectedArea] = useState<string>("");
-  const [selectedSymptom, setSelectedSymptom] = useState<string>("");
-  const [filteredPatients, setFilteredPatients] = useState(MOCK_PATIENTS);
+  const { login, setUserData } = useAuth();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [rememberMe, setRememberMe] = useState(false);
 
-  // Find the state object for the selected state
-  const stateObj = STATES.find(state => state.name === selectedState);
+  const validateEmail = (email: string) => {
+    const gmailRegex = /^[a-zA-Z0-9]+@gmail\.com$/;
+    return gmailRegex.test(email);
+  };
 
-  // Calculate statistics
-  const totalPatients = MOCK_PATIENTS.length;
-  
-  // Add risk levels to patients (for demo purposes)
-  const patientsWithRisk = MOCK_PATIENTS.map(patient => ({
-    ...patient,
-    riskLevel: getRandomRiskLevel() as "low" | "medium" | "high"
-  }));
-
-  // Helper function to get random risk level
-  function getRandomRiskLevel() {
-    const risks = ["low", "medium", "high"];
-    return risks[Math.floor(Math.random() * risks.length)];
-  }
-
-  // Prepare data for pie charts
-  const stateData = Object.entries(
-    MOCK_PATIENTS.reduce((acc, patient) => {
-      acc[patient.state] = (acc[patient.state] || 0) + 1;
-      return acc;
-    }, {} as Record<string, number>)
-  )
-    .map(([name, value]) => ({
-      name,
-      value,
-      color: `hsl(${Math.random() * 360}, 70%, 50%)`,
-    }))
-    .sort((a, b) => b.value - a.value)
-    .slice(0, 5);
-
-  const symptomData = Object.entries(
-    MOCK_PATIENTS.flatMap(p => p.symptoms).reduce((acc, symptom) => {
-      acc[symptom] = (acc[symptom] || 0) + 1;
-      return acc;
-    }, {} as Record<string, number>)
-  )
-    .map(([name, value]) => ({
-      name,
-      value,
-      color: `hsl(${Math.random() * 360}, 70%, 50%)`,
-    }))
-    .sort((a, b) => b.value - a.value)
-    .slice(0, 5);
-
-  // Update filtered patients whenever selections change
-  useEffect(() => {
-    const filtered = patientsWithRisk.filter(patient => {
-      const matchesState = !selectedState || patient.state === selectedState;
-      const matchesArea = !selectedArea || patient.area === selectedArea;
-      const matchesSymptom = !selectedSymptom || patient.symptoms.includes(selectedSymptom);
-      return matchesState && matchesArea && matchesSymptom;
-    });
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setEmail(value);
     
-    setFilteredPatients(filtered);
+    if (!validateEmail(value)) {
+      setEmailError("Please use a valid Gmail address (username@gmail.com)");
+    } else {
+      setEmailError("");
+    }
+  };
+
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    if (value.length < 4 || value.length > 13) {
+      setPasswordError("The password must contain 4 characters minimum and 13 maximum");
+    } else {
+      setPasswordError("");
+    }
+    setPassword(value);
+  };
+
+  const handleSignIn = (e: React.FormEvent) => {
+    e.preventDefault();
     
-    // Show toast when filters are applied
-    if (selectedState || selectedArea || selectedSymptom) {
+    if (validateEmail(email) && !passwordError) {
+      const formData = JSON.parse(localStorage.getItem('signupData') || '{}');
+      const userData = {
+        name: formData.name || 'Sahiti Sri',
+        department: formData.department || 'Cardiology',
+        hospital: formData.hospital || 'City Hospital'
+      };
+      
+      setUserData(userData);
+      login();
       toast({
-        title: "Filters Applied",
-        description: `Showing ${filtered.length} of ${totalPatients} patients`,
+        title: "Successfully Signed In!",
+        description: "Welcome back to SymptoCamp.",
+      });
+      navigate("/dashboard");
+    } else {
+      toast({
+        title: "Sign In Error",
+        description: "Please correct the email and password errors.",
+        variant: "destructive"
       });
     }
-  }, [selectedState, selectedArea, selectedSymptom, totalPatients, toast]);
+  };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <DoctorHeader />
-      
-      <main className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
-          <div>
-            <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
-            <p className="text-gray-600">
-              Welcome back, Dr. {user?.name}
-            </p>
+    <div className="min-h-screen bg-gradient-to-b from-medical-light to-white flex items-center justify-center p-4">
+      <Card className="w-full max-w-md p-6 space-y-6 shadow-lg">
+        <div className="flex flex-col items-center text-center mb-4">
+          <h1 className="text-2xl font-bold text-gray-900">Doctor Sign In</h1>
+          <p className="text-gray-600 mt-2">Sign in to access your SymptoCamp dashboard</p>
+        </div>
+        
+        <form onSubmit={handleSignIn} className="space-y-4">
+          <div className="space-y-2">
+            <Label htmlFor="email" className="flex items-center space-x-2">
+              <Mail className="h-4 w-4 text-medical-primary" />
+              <span>Email Address</span>
+            </Label>
+            <Input
+              id="email"
+              type="email"
+              placeholder="Enter your Gmail address"
+              value={email}
+              onChange={handleEmailChange}
+              required
+              className={`bg-white ${emailError ? 'border-red-500 focus:border-red-500' : ''}`}
+            />
+            {emailError && (
+              <p className="text-red-500 text-sm mt-1">{emailError}</p>
+            )}
           </div>
-          <div className="mt-4 md:mt-0 bg-white p-3 rounded-lg shadow-sm border border-gray-100">
-            <div className="flex items-center space-x-4">
-              <div className="bg-medical-light p-3 rounded-full">
-                <Users className="h-6 w-6 text-medical-primary" />
-              </div>
-              <div>
-                <p className="text-sm text-gray-500">Total Patients</p>
-                <div className="flex items-center">
-                  <h3 className="text-xl font-bold">{totalPatients}</h3>
-                  <ArrowUpRight className="h-4 w-4 text-medical-success ml-1" />
-                </div>
-              </div>
+          
+          <div className="space-y-2">
+            <Label htmlFor="password" className="flex items-center space-x-2">
+              <Lock className="h-4 w-4 text-medical-primary" />
+              <span>Password</span>
+            </Label>
+            <Input
+              id="password"
+              type="password"
+              placeholder="Enter your password"
+              value={password}
+              onChange={handlePasswordChange}
+              required
+              className={`bg-white ${
+                passwordError ? 'border-red-500 focus:border-red-500' : ''
+              }`}
+            />
+            {passwordError && (
+              <p className="text-red-500 text-sm mt-1">{passwordError}</p>
+            )}
+          </div>
+
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <Checkbox 
+                id="remember-me" 
+                checked={rememberMe} 
+                onCheckedChange={(checked) => setRememberMe(checked as boolean)} 
+              />
+              <label htmlFor="remember-me" className="text-sm text-gray-600 cursor-pointer">
+                Remember me
+              </label>
+            </div>
+            <a href="#" className="text-sm text-medical-primary hover:underline">
+              Forgot password?
+            </a>
+          </div>
+
+          <Button type="submit" className="w-full bg-medical-primary hover:bg-medical-primary/90">
+            Sign In
+          </Button>
+          
+          <div className="relative">
+            <div className="absolute inset-0 flex items-center">
+              <span className="w-full border-t" />
+            </div>
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="bg-white px-2 text-gray-500">Or</span>
             </div>
           </div>
-        </div>
+          
+          <Button 
+            type="button"
+            variant="outline" 
+            className="w-full border-gray-300"
+            onClick={() => navigate("/sign-up")}
+          >
+            Create an Account
+          </Button>
+        </form>
 
-        {/* Filters */}
-        <Card className="mb-8 shadow-sm">
-          <CardHeader className="pb-2">
-            <CardTitle className="text-lg font-medium">Filters</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="space-y-2">
-                <label className="text-sm font-medium">State</label>
-                <Select onValueChange={setSelectedState} value={selectedState}>
-                  <SelectTrigger className="bg-white">
-                    <SelectValue placeholder="Select state" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="">All States</SelectItem>
-                    {STATES.map((state) => (
-                      <SelectItem key={state.name} value={state.name}>
-                        {state.name}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-medium">Area</label>
-                <Select 
-                  onValueChange={setSelectedArea} 
-                  disabled={!selectedState}
-                  value={selectedArea}
-                >
-                  <SelectTrigger className="bg-white">
-                    <SelectValue placeholder={selectedState ? "Select area" : "Select state first"} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="">All Areas</SelectItem>
-                    {stateObj?.areas.map((area) => (
-                      <SelectItem key={area} value={area}>
-                        {area}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-medium">Symptoms</label>
-                <Select onValueChange={setSelectedSymptom} value={selectedSymptom}>
-                  <SelectTrigger className="bg-white">
-                    <SelectValue placeholder="Select symptom" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="">All Symptoms</SelectItem>
-                    {SYMPTOMS.map((symptom) => (
-                      <SelectItem key={symptom.id} value={symptom.name}>
-                        {symptom.name}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Statistics Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          <PatientStatisticsCard 
-            title="Patients by State" 
-            data={stateData}
-          />
-          <PatientStatisticsCard 
-            title="Common Symptoms" 
-            data={symptomData}
-          />
-        </div>
-
-        {/* Patient List */}
-        <PatientList patients={filteredPatients} />
-      </main>
+        <Button 
+          variant="ghost" 
+          className="w-full flex items-center justify-center"
+          onClick={() => navigate("/")}
+        >
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Return to Home
+        </Button>
+      </Card>
     </div>
   );
 };
 
-export default Dashboard;
+export default SignIn;
