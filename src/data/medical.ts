@@ -346,7 +346,7 @@ export const MOCK_PATIENTS = [
     "age": 27,
     "gender": "Female",
     "state": "Tamil Nadu",
-    "area": "Chennai",
+    "area": "Theni",
     "symptoms": ["Headache"]
   },
   {
@@ -354,8 +354,8 @@ export const MOCK_PATIENTS = [
     "name": "Vihaan",
     "age": 45,
     "gender": "Male",
-    "state": "Kerala",
-    "area": "Kochi",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Fatigue", "Nausea"]
   },
   {
@@ -363,8 +363,8 @@ export const MOCK_PATIENTS = [
     "name": "Saanvi",
     "age": 21,
     "gender": "Female",
-    "state": "Maharashtra",
-    "area": "Mumbai",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Cough", "Loss of taste"]
   },
   {
@@ -381,8 +381,8 @@ export const MOCK_PATIENTS = [
     "name": "Myra",
     "age": 30,
     "gender": "Female",
-    "state": "West Bengal",
-    "area": "Kolkata",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Runny nose"]
   },
   {
@@ -408,8 +408,8 @@ export const MOCK_PATIENTS = [
     "name": "Krishna",
     "age": 62,
     "gender": "Male",
-    "state": "Rajasthan",
-    "area": "Udaipur",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Shortness of breath", "Chest pain"]
   },
   {
@@ -426,8 +426,8 @@ export const MOCK_PATIENTS = [
     "name": "Kabir",
     "age": 37,
     "gender": "Male",
-    "state": "Bihar",
-    "area": "Patna",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Nausea", "Fatigue"]
   },
   {
@@ -453,8 +453,8 @@ export const MOCK_PATIENTS = [
     "name": "Aadhya",
     "age": 19,
     "gender": "Female",
-    "state": "Odisha",
-    "area": "Bhubaneswar",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Runny nose", "Headache"]
   },
   {
@@ -471,8 +471,8 @@ export const MOCK_PATIENTS = [
     "name": "Meera",
     "age": 26,
     "gender": "Female",
-    "state": "Himachal Pradesh",
-    "area": "Shimla",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Cough"]
   },
   {
@@ -490,7 +490,7 @@ export const MOCK_PATIENTS = [
     "age": 24,
     "gender": "Female",
     "state": "Telangana",
-    "area": "Hyderabad",
+    "area": "Bhadrachalam",
     "symptoms": ["Sore throat", "Fatigue"]
   },
   {
@@ -498,8 +498,8 @@ export const MOCK_PATIENTS = [
     "name": "Ishaan",
     "age": 38,
     "gender": "Male",
-    "state": "Chhattisgarh",
-    "area": "Raipur",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Chest pain"]
   },
   {
@@ -508,7 +508,7 @@ export const MOCK_PATIENTS = [
     "age": 35,
     "gender": "Female",
     "state": "Andhra Pradesh",
-    "area": "Vijayawada",
+    "area": "Araku Valley",
     "symptoms": ["Loss of smell"]
   },
   {
@@ -525,8 +525,8 @@ export const MOCK_PATIENTS = [
     "name": "Tara",
     "age": 42,
     "gender": "Female",
-    "state": "Madhya Pradesh",
-    "area": "Indore",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Cough", "Fatigue"]
   },
   {
@@ -543,8 +543,8 @@ export const MOCK_PATIENTS = [
     "name": "Rhea",
     "age": 33,
     "gender": "Female",
-    "state": "Tripura",
-    "area": "Agartala",
+   "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Loss of smell", "Runny nose"]
   },
   {
@@ -561,8 +561,8 @@ export const MOCK_PATIENTS = [
     "name": "Siya",
     "age": 20,
     "gender": "Female",
-    "state": "Manipur",
-    "area": "Imphal",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Fever", "Dry cough"]
   },
   {
@@ -589,7 +589,7 @@ export const MOCK_PATIENTS = [
     "age": 41,
     "gender": "Male",
     "state": "Sikkim",
-    "area": "Gangtok",
+    "area": "Dzongu",
     "symptoms": ["Headache"]
   },
   {
@@ -597,8 +597,8 @@ export const MOCK_PATIENTS = [
     "name": "Naira",
     "age": 22,
     "gender": "Female",
-    "state": "Punjab",
-    "area": "Amritsar",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Fever", "Loss of smell"]
   },
   {
@@ -615,8 +615,8 @@ export const MOCK_PATIENTS = [
     "name": "Vanya",
     "age": 27,
     "gender": "Female",
-    "state": "Gujarat",
-    "area": "Surat",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Fatigue", "Runny nose"]
   },
   {
@@ -633,8 +633,8 @@ export const MOCK_PATIENTS = [
     "name": "Aisha",
     "age": 32,
     "gender": "Female",
-    "state": "Tamil Nadu",
-    "area": "Madurai",
+   "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Loss of taste"]
   },
   {
@@ -651,8 +651,8 @@ export const MOCK_PATIENTS = [
     "name": "Zara",
     "age": 31,
     "gender": "Female",
-    "state": "Chandigarh",
-    "area": "Sector 17",
+   "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Fever", "Nausea"]
   },
   {
@@ -678,8 +678,8 @@ export const MOCK_PATIENTS = [
     "name": "Atharv",
     "age": 46,
     "gender": "Male",
-    "state": "West Bengal",
-    "area": "Asansol",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Cough", "Headache"]
   },
   {
@@ -1794,8 +1794,8 @@ export const MOCK_PATIENTS = [
     "name": "Dev",
     "age": 33,
     "gender": "Male",
-    "state": "Chhattisgarh",
-    "area": "Bilaspur",
+    "state": "Andhra Pradesh",
+    "area": "Araku Valley",
     "symptoms": ["Nausea", "Fever"]
   },
   {
@@ -1803,8 +1803,8 @@ export const MOCK_PATIENTS = [
     "name": "Aisha",
     "age": 30,
     "gender": "Female",
-    "state": "Uttarakhand",
-    "area": "Rishikesh",
+    "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Cough", "Chest pain"]
   },
   {
@@ -1821,8 +1821,8 @@ export const MOCK_PATIENTS = [
     "name": "Vanya",
     "age": 29,
     "gender": "Female",
-    "state": "Himachal Pradesh",
-    "area": "Manali",
+    "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Shortness of breath", "Fatigue"]
   },
   {
@@ -1839,8 +1839,8 @@ export const MOCK_PATIENTS = [
     "name": "Diya",
     "age": 31,
     "gender": "Female",
-    "state": "Bihar",
-    "area": "Gaya",
+   "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Loss of smell", "Sore throat"]
   },
   {
@@ -1866,8 +1866,8 @@ export const MOCK_PATIENTS = [
     "name": "Arush",
     "age": 34,
     "gender": "Male",
-    "state": "Uttar Pradesh",
-    "area": "Varanasi",
+   "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Loss of taste", "Dry cough"]
   },
   {
@@ -1875,8 +1875,8 @@ export const MOCK_PATIENTS = [
     "name": "Tanvi",
     "age": 28,
     "gender": "Female",
-    "state": "Karnataka",
-    "area": "Mysuru",
+   "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Cough", "Fatigue"]
   },
   {
@@ -1893,8 +1893,8 @@ export const MOCK_PATIENTS = [
     "name": "Avni",
     "age": 26,
     "gender": "Female",
-    "state": "Andhra Pradesh",
-    "area": "Tirupati",
+    "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Headache", "Shortness of breath"]
   },
   {
@@ -1902,8 +1902,8 @@ export const MOCK_PATIENTS = [
     "name": "Raghav",
     "age": 38,
     "gender": "Male",
-    "state": "Telangana",
-    "area": "Warangal",
+   "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Runny nose", "Cough"]
   },
   {
@@ -1920,8 +1920,8 @@ export const MOCK_PATIENTS = [
     "name": "Samar",
     "age": 32,
     "gender": "Male",
-    "state": "Rajasthan",
-    "area": "Ajmer",
+   "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Loss of smell", "Chest pain"]
   },
   {
@@ -2028,8 +2028,8 @@ export const MOCK_PATIENTS = [
     "name": "Kunal",
     "age": 37,
     "gender": "Male",
-    "state": "Rajasthan",
-    "area": "Udaipur",
+    "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Dry cough", "Loss of smell"]
   },
   {
@@ -2037,8 +2037,8 @@ export const MOCK_PATIENTS = [
     "name": "Anaya",
     "age": 31,
     "gender": "Female",
-    "state": "Karnataka",
-    "area": "Hubballi",
+    "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Cough", "Runny nose"]
   },
   {
@@ -2046,8 +2046,8 @@ export const MOCK_PATIENTS = [
     "name": "Zayan",
     "age": 38,
     "gender": "Male",
-    "state": "Kerala",
-    "area": "Alappuzha",
+   "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Fever", "Fatigue"]
   },
   {
@@ -2055,8 +2055,8 @@ export const MOCK_PATIENTS = [
     "name": "Aarohi",
     "age": 26,
     "gender": "Female",
-    "state": "Tamil Nadu",
-    "area": "Tirunelveli",
+   "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Shortness of breath", "Cough"]
   },
   {
@@ -2064,8 +2064,8 @@ export const MOCK_PATIENTS = [
     "name": "Om",
     "age": 35,
     "gender": "Male",
-    "state": "Andhra Pradesh",
-    "area": "Kakinada",
+    "state": "Telangana",
+    "area": "Bhadrachalam",
     "symptoms": ["Sore throat", "Fatigue"]
   },
   {
@@ -2074,7 +2074,7 @@ export const MOCK_PATIENTS = [
     "age": 28,
     "gender": "Female",
     "state": "Telangana",
-    "area": "Nizamabad",
+    "area": "Bhadrachalam",
     "symptoms": ["Fever", "Nausea"]
   },
   {
@@ -2083,7 +2083,7 @@ export const MOCK_PATIENTS = [
     "age": 40,
     "gender": "Male",
     "state": "Maharashtra",
-    "area": "Kolhapur",
+    "area": "Melghat",
     "symptoms": ["Headache", "Dry cough"]
   },
   {
@@ -2091,8 +2091,8 @@ export const MOCK_PATIENTS = [
     "name": "Jiya",
     "age": 29,
     "gender": "Female",
-    "state": "Uttar Pradesh",
-    "area": "Meerut",
+    "state": "Maharashtra",
+    "area": "Melghat",
     "symptoms": ["Loss of taste", "Shortness of breath"]
   },
   {
@@ -2100,8 +2100,8 @@ export const MOCK_PATIENTS = [
     "name": "Aditya",
     "age": 32,
     "gender": "Male",
-    "state": "West Bengal",
-    "area": "Howrah",
+    "state": "Maharashtra",
+    "area": "Melghat",
     "symptoms": ["Runny nose", "Fever"]
   },
   {
@@ -2109,8 +2109,8 @@ export const MOCK_PATIENTS = [
     "name": "Meera",
     "age": 27,
     "gender": "Female",
-    "state": "Goa",
-    "area": "Panaji",
+    "state": "Maharashtra",
+    "area": "Melghat",
     "symptoms": ["Dry cough", "Headache"]
   },
   {
@@ -2118,8 +2118,8 @@ export const MOCK_PATIENTS = [
     "name": "Ritesh",
     "age": 36,
     "gender": "Male",
-    "state": "Gujarat",
-    "area": "Bhuj",
+    "state": "Maharashtra",
+    "area": "Melghat",
     "symptoms": ["Cough", "Sore throat"]
   },
   {
@@ -2127,8 +2127,8 @@ export const MOCK_PATIENTS = [
     "name": "Nidhi",
     "age": 33,
     "gender": "Female",
-    "state": "Madhya Pradesh",
-    "area": "Sagar",
+    "state": "Maharashtra",
+    "area": "Melghat",
     "symptoms": ["Loss of smell", "Fever"]
   }
 ];
